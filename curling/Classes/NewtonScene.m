@@ -103,7 +103,7 @@
     // Create a physics node, to hold all the spheres
     // This node is a physics node, so that you can add physics to the spheres
     _physics = [CCPhysicsNode node];
-    _physics.gravity = NewtonGravity;
+    _physics.gravity = NoGravity;
     [self addChild:_physics];
     
     // show physice debug draw

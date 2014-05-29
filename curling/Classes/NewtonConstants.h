@@ -27,7 +27,7 @@
 static const int NewtonLetterCount = 7;
 static const NSString *NewtonLetter[] = { @"c", @"o", @"c", @"o", @"s", @"2", @"d" };
 static const CGPoint NewtonLetterPosition[] = {{-2,0}, {-1,0}, {0,0}, {1,0}, {2,0}, {1.8,-2}, {2.8,-2}};
-static const BOOL NewtonLetterHasRope[] = {YES, YES, YES, YES, YES, NO, NO};
+static const BOOL NewtonLetterHasRope[] = {NO, NO, NO, NO, YES, NO, NO};
 
 static const float NewtonBackgroundLuminance = 0.1f;
 
@@ -37,6 +37,7 @@ static const CGPoint NewtonButtonResetPosition = (CGPoint){0.90f, 0.80f};
 static const CGPoint NewtonLightPosition = (CGPoint){0.75f, 0.35f};
 
 static const CGPoint NewtonGravity = (CGPoint){0, -980.665};
+static const CGPoint NoGravity = (CGPoint) {0, 0};
 static const float NewtonOutlineFriction = 1.0f;
 static const float NewtonOutlineElasticity = 0.5f;
 static const float NewtonSphereFriction = 0.5;
@@ -47,7 +48,7 @@ static const float NewtonSphereSwingingMass = 0.25;
 static const float NewtonSphereMovingMass = 100;
 static const float NewtonRopeNormalMass = 1;
 
-static const BOOL NewtonRealRope = NO;
+static const BOOL NewtonRealRope = YES;
 static const int NewtonRopeSegments = 6;
 
 static const float NewtonParticleScale = 0.8f;
